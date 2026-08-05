@@ -182,7 +182,6 @@ export function BookDemoDialog() {
     try {
       //https://detection-forge-server.vercel.app
       //http://localhost:5011
-      console.log(parsed.data.firstName);
       const result = await axios.post(
         "https://detectionforge-backend.vercel.app/api/createDemo",
         {
@@ -197,7 +196,6 @@ export function BookDemoDialog() {
         }
       );
       setSubmitting(false);
-      console.log(result);
       if (result) {
         setSubmitted(true);
         toast.success("Request received. Our team will reach out shortly.");
