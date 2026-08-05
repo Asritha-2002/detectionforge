@@ -184,7 +184,7 @@ export function BookDemoDialog() {
       //http://localhost:5011
       console.log(parsed.data.firstName);
       const result = await axios.post(
-        "https://detection-forge-server.vercel.app/api/createDemo",
+        "https://detectionforge-backend.vercel.app/api/createDemo",
         {
           firstName: parsed.data.firstName,
           lastName: parsed.data.lastName,
@@ -252,7 +252,7 @@ export function BookDemoDialog() {
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="grid gap-2">
                   <Label>First Name</Label>
-                  <Input name="firstName" />
+                  <Input name="firstName" placeholder="Enter your first name" />
                   {errors.firstName && (
                     <p className="text-xs text-danger">{errors.firstName}</p>
                   )}
@@ -260,7 +260,7 @@ export function BookDemoDialog() {
 
                 <div className="grid gap-2">
                   <Label>Last Name</Label>
-                  <Input name="lastName" />
+                  <Input name="lastName" placeholder="Enter your last name" />
                   {errors.lastName && (
                     <p className="text-xs text-danger">{errors.lastName}</p>
                   )}
@@ -269,7 +269,7 @@ export function BookDemoDialog() {
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="grid gap-2">
                   <Label>Company Name</Label>
-                  <Input name="companyName" />
+                  <Input name="companyName" placeholder="Enter your company name" />
                   {errors.companyName && (
                     <p className="text-xs text-danger">{errors.companyName}</p>
                   )}
@@ -279,6 +279,7 @@ export function BookDemoDialog() {
                   <Label>Company Email</Label>
                   <Input
                     name="companyEmail"
+                    placeholder="Enter your company email"
                     type="email"
                   />
                   {errors.companyEmail && (
@@ -289,7 +290,7 @@ export function BookDemoDialog() {
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="grid gap-2">
                   <Label>Role</Label>
-                  <Input name="role" />
+                  <Input name="role" placeholder="Enter your role" />
                   {errors.role && (
                     <p className="text-xs text-danger">{errors.role}</p>
                   )}
@@ -297,7 +298,7 @@ export function BookDemoDialog() {
 
                 <div className="grid gap-2">
                   <Label>Location</Label>
-                  <Input name="location" />
+                  <Input name="location" placeholder="Enter your location" />
                   {errors.location && (
                     <p className="text-xs text-danger">{errors.location}</p>
                   )}
