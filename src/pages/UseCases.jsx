@@ -18,7 +18,7 @@ import {
   Building2,
   Briefcase,
 } from "lucide-react";
-import { Seo } from "../components/Seo";
+import Seo from "../componants/Seo"
 export default function UseCases() {
   return (
     <>

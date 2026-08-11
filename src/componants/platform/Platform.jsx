@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 import { openBookDemo } from "../../componants/home/BookDemoDialog";
 import { motion } from "motion/react";
-import { Seo } from "../Seo";
+import Seo from "../Seo"
 export function Platform() {
   return (
     <>

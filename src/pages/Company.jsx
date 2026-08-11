@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { openBookDemo } from "../componants/home/BookDemoDialog";
 import { motion } from "motion/react";
-import { Seo } from "../components/Seo";
+import Seo from "../componants/Seo"
 import {
   ArrowRight,
   CheckCircle2,

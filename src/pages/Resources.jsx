@@ -20,7 +20,7 @@ import {
   Sparkles,
   Compass,
 } from "lucide-react";
-import { Seo } from "../components/Seo";
+import Seo from "../componants/Seo"
 export default function Resources() {
   return (
     <>

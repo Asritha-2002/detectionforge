@@ -10,7 +10,7 @@ import {
   Integrations,
   CTA,
 } from "../componants/home/Sections";
-import { Seo } from "../components/Seo";
+import Seo from "../componants/Seo"
 export function Home() {
   return (
     <>
