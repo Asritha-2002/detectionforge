@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { toast } from "sonner";
 import { ArrowRight, CheckCircle2, X } from "lucide-react";
 import axios from "axios";
-
+import { trackEvent } from "../../lib/analytics";
 const OPEN_EVENT = "open-book-demo";
 
 export function openBookDemo() {
@@ -198,6 +198,7 @@ export function BookDemoDialog() {
       setSubmitting(false);
       if (result) {
         setSubmitted(true);
+        trackEvent("demo_form_submitted");
         toast.success("Request received. Our team will reach out shortly.");
       }
     } catch (err) {

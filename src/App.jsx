@@ -7,8 +7,21 @@ import UseCases from "./pages/UseCases";
 import Company from "./pages/Company";
 import  Resources  from "./pages/Resources";
 import Careers from "./pages/Careers";
+import { initGA, trackPageview } from "./lib/analytics";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    initGA();
+  }, []);
+
+  useEffect(() => {
+    trackPageview(location.pathname + location.search);
+  }, [location]);
   return (
     <Routes>
       <Route element={<Layout />}>

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
 import { ThemeToggle } from "../ThemeToggle";
 import { BookDemoDialog, openBookDemo } from "../home/BookDemoDialog";
-
+import { trackEvent } from "../../lib/analytics"; 
 const NAV = [
   { label: "Home", to: "/" },
   { label: "Platform", to: "/platform" },
@@ -195,7 +195,10 @@ export function Navbar() {
           )} */}
 
           <button
-            onClick={openBookDemo}
+            onClick={() => {
+    trackEvent("book_demo_click", { location: "navbar" });
+    openBookDemo();
+  }}
             className="desktop-book-demo"
             style={{
               height: "36px",
@@ -255,9 +258,10 @@ export function Navbar() {
 
               <button
                 onClick={() => {
-                  setOpen(false);
-                  openBookDemo();
-                }}
+    trackEvent("book_demo_click", { location: "mobile_menu" });
+    setOpen(false);
+    openBookDemo();
+  }}
                 style={{
                   width: "100%",
                   marginTop: "12px",
