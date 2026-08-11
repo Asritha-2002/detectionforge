@@ -12,7 +12,7 @@ import {
   Target,
   Users,
 } from "lucide-react";
-
+import { trackEvent } from "../lib/analytics";
 export default function Careers() {
   return (
     <>
@@ -247,7 +247,8 @@ function StayInTouch() {
             </div>
             <div className="flex flex-col gap-3 sm:flex-row md:justify-end">
               <a
-                href="mailto:careers@detectionforge.com"
+                href="mailto:admin@detectionforge.com"
+                onClick={() => trackEvent("careers_email_click")}
                 className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-foreground px-5 text-sm font-medium text-background hover:opacity-90"
               >
                 Email us <ArrowRight className="h-4 w-4" />
@@ -285,7 +286,10 @@ function ClosingCTA() {
             </p>
             <div className="mt-7 flex flex-wrap justify-center gap-3">
               <button
-                onClick={openBookDemo}
+                onClick={() => {
+    trackEvent("book_demo_click", { location: "careers_closing_cta" });
+    openBookDemo();
+  }}
                 className="inline-flex h-11 items-center gap-2 rounded-md bg-foreground px-5 text-sm font-medium text-background hover:opacity-90"
               >
                 Book a demo <ArrowRight className="h-4 w-4" />

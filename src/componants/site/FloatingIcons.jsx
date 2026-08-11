@@ -16,7 +16,7 @@ export function FloatingIcons() {
 
   const handleEmail = () => {
   window.location.href =
-    "mailto:lavanyainti14@gmail.com?subject=Detection Forge Inquiry&body=Hi, I am interested in Detection Forge.";
+    "mailto:admin@detectionforge.com?subject=Detection Forge Inquiry&body=Hi, I am interested in Detection Forge.";
 };
 
   return (
@@ -30,29 +30,6 @@ export function FloatingIcons() {
         <AnimatePresence>
           {open && (
             <>
-              <motion.div
-                initial={{ opacity: 0, x: 30, scale: 0.7 }}
-                animate={{ opacity: 1, x: 0, scale: 1 }}
-                exit={{ opacity: 0, x: 30, scale: 0.7 }}
-                transition={{ duration: 0.25 }}
-                onClick={handleWhatsapp}
-                className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-xl border border-teal text-green-500 cursor-pointer"
-              >
-                <FaWhatsapp size={22} />
-              </motion.div>
-
-              {/* <motion.a
-                initial={{ opacity: 0, x: 30, scale: 0.7 }}
-                animate={{ opacity: 1, x: 0, scale: 1 }}
-                exit={{ opacity: 0, x: 30, scale: 0.7 }}
-                transition={{ duration: 0.35 }}
-                href="https://linkedin.com/company/yourcompany"
-                target="_blank"
-                className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-xl border border-blue-600 text-blue-600"
-              >
-                <FaLinkedinIn size={20} />
-              </motion.a> */}
-
               <motion.div
                 initial={{ opacity: 0, x: 30, scale: 0.7 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
