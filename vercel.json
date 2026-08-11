@@ -1,5 +1,6 @@
 {
   "rewrites": [
+     { "source": "/platform", "destination": "/platform.html" },
     { "source": "/((?!robots.txt|sitemap.xml|og-image.png|image1.png).*)", "destination": "/index.html" }
   ]
 }
