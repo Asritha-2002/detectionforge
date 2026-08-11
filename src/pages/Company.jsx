@@ -21,6 +21,11 @@ import {
 export default function Company() {
   return (
     <>
+    <Seo
+  title="Company | Detection Forge"
+  description="Learn about Detection Forge's mission to bring validation and assurance to detection engineering, and the team building the platform."
+  path="/company"
+/>
       <Hero />
       <WhyExist />
       <Beliefs />

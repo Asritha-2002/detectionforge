@@ -14,6 +14,11 @@ import {
 export function Home() {
   return (
     <>
+    <Seo
+  title="Detection Forge | SIEM Detection Validation Platform"
+  description="Validate detections against historical SIEM data, measure ATT&CK coverage, and strengthen your SOC."
+  path="/"
+/>
       <Hero />
       <Problem />
       <Pillars />

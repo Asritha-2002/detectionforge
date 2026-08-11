@@ -22,6 +22,11 @@ import {
 export default function UseCases() {
   return (
     <>
+    <Seo
+  title="Use Cases | Detection Forge"
+  description="From SIEM migrations to continuous coverage checks — see how detection engineering teams use Detection Forge to validate rules against real historical data."
+  path="/use-cases"
+/>
       <Hero />
       <Intro />
       <CoreUseCases />
@@ -434,6 +439,7 @@ function SectionLabel({ icon: Icon, children }) {
 function SectionHead({ label, title, sub }) {
   return (
     <div className="max-w-2xl">
+        
       <div className="font-mono text-xs uppercase tracking-wider text-teal">
         {label}
       </div>

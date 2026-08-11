@@ -15,6 +15,11 @@ import {
 export default function Careers() {
   return (
     <>
+    <Seo
+  title="Careers | Detection Forge"
+  description="Join Detection Forge and help build the platform SOC teams use to validate detections and close SIEM coverage gaps."
+  path="/careers"
+/>
       <Hero />
       <CurrentStatus />
       <WhatWereDoingInstead />

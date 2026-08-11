@@ -24,6 +24,11 @@ import {
 export default function Resources() {
   return (
     <>
+    <Seo
+  title="Resources | Detection Forge"
+  description="Guides, playbooks, and technical deep-dives on detection engineering, the detection lifecycle, and building measurable SOC coverage."
+  path="/resources"
+/>
       <Hero />
       <Intro />
       <Featured />

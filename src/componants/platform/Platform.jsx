@@ -43,6 +43,11 @@ export function Platform() {
 function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-border">
+        <Seo
+  title="Platform | Detection Forge"
+  description="See how Detection Forge validates detection rules, tracks the detection lifecycle, and closes SIEM coverage gaps."
+  path="/platform"
+/>
       <div className="absolute inset-0 bg-grid bg-grid-fade opacity-60" />
       <div className="absolute inset-x-0 top-0 -z-10 h-[600px] bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,color-mix(in_oklab,var(--teal)_18%,transparent),transparent_70%)]" />
 
