@@ -1,6 +1,10 @@
 {
   "rewrites": [
-     { "source": "/platform", "destination": "/platform.html" },
+    { "source": "/careers", "destination": "/careers.html" },
+    { "source": "/platform", "destination": "/platform.html" },
+    { "source": "/use-cases", "destination": "/use-cases.html" },
+    { "source": "/company", "destination": "/company.html" },
+    { "source": "/resources", "destination": "/resources.html" },
     { "source": "/((?!robots.txt|sitemap.xml|og-image.png|image1.png).*)", "destination": "/index.html" }
   ]
 }
