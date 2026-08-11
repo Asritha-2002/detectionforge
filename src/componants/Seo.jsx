@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 const SITE_URL = "https://www.detectionforge.com";
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`; // see Part A6 — don't reuse the favicon
 
-export function Seo({ title, description, path = "/", image = DEFAULT_IMAGE }) {
+export default function Seo({ title, description, path = "/", image = DEFAULT_IMAGE }) {
   const url = `${SITE_URL}${path}`;
   return (
     <Helmet>
